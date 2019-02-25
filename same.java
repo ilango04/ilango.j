@@ -14,8 +14,15 @@ class same
         }
         for(int i=0;i<n;i++)
         {
-          c="";
+            if(b==null)
+            {
             b=a[0];
+            }
+             else
+             {
+             b=c;
+             }
+             c="";
            for(int j=0;j<b.length();j++)
             {
                  if(b.substring(j,j+1).equals(a[i].substring(j,j+1)))
